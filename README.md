@@ -79,7 +79,7 @@ def intersect_select(obj,bmesh_obj):
     if len(edges) == len(bmesh_obj.edges):
         edges.clear()
 
-    # Initalize the collection. The collection get +1 for every edge collision
+    # Initalize the collection. The collection gets +1 for every edge collision
     collection = 0
     
     # Ensure the bmesh is up to date (This can probably be deleted to improve speed)
@@ -117,7 +117,7 @@ def intersect_select(obj,bmesh_obj):
 def extrapolate_smooth(bmesh, vert, value):
     """Use link_edges to determine a mean area for each vertex
        Extrapolate a position based on the direction it moves towards the mean
-       Can be used to smooth more quickly or more slowly with a tradoff in accuracy"""
+       Can be used to smooth more quickly or more slowly with a tradeoff in accuracy"""
     
     # When using boundary, the smoothing of boundary verts only considers other boundary verts
     if bpy.context.scene.respect_boundary_edges:
